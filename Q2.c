@@ -15,7 +15,7 @@
 void createll(struct node *ptr, int n)
 {
    struct node *prev;
-   printf("Enter Node 1: ");
+   printf("Node 1: ");
    scanf("%d",&ptr->data);
    prev=ptr;
    ptr->next=NULL;
@@ -24,7 +24,7 @@ void createll(struct node *ptr, int n)
    {
       struct node *new;
       new = (struct node *)malloc(sizeof(struct node));
-      printf("Enter Node %d: ",i);
+      printf("Node %d: ",i);
       scanf("%d",&new->data);
       prev->next=new;
       prev = new;
@@ -67,7 +67,7 @@ struct node* creating_two_ll(struct node *ptr)
          else{
             temp=ptr;
             ptr=ptr->next;
-            temp->next=negetive;
+            temp->next=negetive; 
             negetive=temp;
          }
          
